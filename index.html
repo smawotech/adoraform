@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>
+      Fiche d'enregistrement ancien Collège Adora | 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+  <body>
+    <div class="bg-wrapper">
+      <div class="header">
+        <h1>Powered by</h1>
+        <a href="https://smawotech.github.io" class="header"><img src="img/lg.png"></a><h1>Fiche d'enregistrement</h1> 
+      </div>
+
+      <div class="wrapper">
+        <div class="intro">
+          <a href=""class="intro"><img src="img/lg1.png"></a>
+          <h1>Enregistrez-vous pour nous permettre de savoir plus sur vous</h1>
+          <p style="color: rgb(13, 13, 146);">
+            Cette fiche est destinée aux membres du groupe des anciens du collège adora dans le cadre de permettre au comité d'avoir toutes les informations nécessaires de ses membres.
+          </p>
+        </div>
+        <hr id="first" />
+        <hr id="second" />
+        <form action="https://formspree.io/f/mdoqgyka" method="post">
+          <fieldset class="contact-input">
+            <h3>Remplissez votre fiche correctement</h3>
+
+            <label for="Noms">Nom complet</label>
+            <input
+              type="text"
+              id="name"
+              name="Noms"
+              placeholder="Saisissez votre nom, post-nom et prenom"
+              required
+            />
+          </fieldset>
+          <fieldset label for="Noms">sexe</label>
+            <label class="format" for="format-html">
+              <input
+                type="radio"
+                name="Sexe"
+                value="M"
+                id="format-html"
+              />
+              <span class="format__checkmark"></span>
+              M
+            </label>
+            <label class="format" for="format-plain">
+              <input
+                type="radio"
+                name="Sexe"
+                value="F"
+                id="format-plain"
+              />
+              <span class="format__checkmark"></span>
+              F
+            </label>
+          </fieldset>
+          <fieldset class="contact-input">
+            <label for="email">Adresse Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Entrer votre email"
+              required
+            />
+
+            <label for="phone">Numero de téléphone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Entrez votre numéro avec le code du pays" 
+            />
+            <!-- documentation says that type telephone isn't really supported yet -->
+            <label for="street">Adresse Physique</label>
+            <input type="text" id="Adresse Physique" name="Adresse Physique" />
+
+            <label for="Pays">Pays de résidence</label>
+            <input type="text" id="Pays" name="Pays" />
+
+            <label for="Etat Civil">Etat Civil</label>
+            <div class="state-select">
+              <select id="state" name="Faculté">
+                <option value="" disabled selected hidden>Choisissez votre Etat Civil</option>
+                <option value="Autres">Autres</option>
+                <option value="Marié">Marié(e)</option>
+                <option value="Célibataire">Celibataire</option>
+                <option value="Divorcé">Divorcé(e)</option>                
+              </select>
+            </div>
+
+            <label for="Département">Profession</label>
+            <input type="text" id="zip" name="Département" />
+          </fieldset>
+          <hr id="third" />
+          <fieldset class="about">
+            <h3>Titre Académique</h3>
+
+            <label for="Fonction">Titre</label>
+            <div class="state-select">
+              <select id="state" name="Module">
+                <option value="Choose">Choisissez votre titre Académique</option>
+                <option value="Ingénieurs">Ingénieur</option>
+                <option value="Médecins">Médecin</option>
+                <option value="Les deux">Autres</option>
+              </select>
+            </div>
+
+            <!-- <label for="ide">la</label>
+            <div class="state-select">
+              <select id="state" name="langue">
+                <option value="Choose">Choisissez votre langue</option>
+                <option value="Français">Français</option>
+                <option value="Anglais">Anglais</option>
+              </select>
+            </div> -->
+
+          </fieldset>
+          <hr id="fourth" />
+          <fieldset class="newsletter">
+            <h3>Préférences</h3>
+
+            <p>Cochez le moyen par lequel nous pouvons vous contactez</p>
+            <label class="newsletter__label" for="html"
+              >Email
+              <input
+                class="newsletter__input"
+                type="checkbox"
+                id="html"
+                name="Moyen de contact"
+                value="Email"
+              />
+              <span class="newsletter__checkmark"></span>
+            </label>
+
+            <label class="newsletter__label" for="css"
+              >Appel local
+              <input
+                class="newsletter__input"
+                type="checkbox"
+                id="css"
+                name="Moyen de contact"
+                value="Appel local"
+              />
+              <span class="newsletter__checkmark"></span>
+            </label>
+
+            <label class="newsletter__label" for="javascript"
+              >Whatsapp
+              <input
+                class="newsletter__input"
+                type="checkbox"
+                id="javascript"
+                name="Moyen de contact"
+                value="Whatsapp"
+              />
+              <span class="newsletter__checkmark"></span>
+            </label>
+
+
+            <h3>Votre suggestion </h3>
+
+            <textarea rows="5" name="Message"></textarea><br />
+
+            <input type="submit" value="Envoyez" />
+          </fieldset>
+        </form>
+        <a href="https://smawotech.github.io" class="intro" style="text-align: center;">Vos informations sont sécurisées bout en bout par Smart World Technology SARL</a>
+      </div>
+    </div>
+  </body>
+</html>
